@@ -1,0 +1,359 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* ---- HEADER ---- */
+
+.flex-container{
+    background: #000000;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+}
+
+.menu-nav{
+    display: flex;
+}
+
+.menu-nav a{
+    text-decoration: none;
+    padding: 0 30px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+img{
+    width: 170px;
+}
+  
+
+ 
+/*---- HOVER ----*/
+li{
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    display: inline-block;
+
+}
+
+.cool-link::after{
+       content:'';
+       display: block;
+       width: 0;
+       height: 2px;
+       background: #2196f3;
+       transition: width .3s;
+}
+
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+/*---- CAPA ----*/
+
+.capa{
+    background-image: url(./img/capa3.jpg); 
+    min-height: 100vh;
+    background-size: cover;
+    
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+   
+
+  
+
+.capa h1{
+    max-width: 500px;
+    font-size: 70px;
+    margin-bottom: 0;
+    text-shadow: 3px 3px black;
+}
+
+.capa h2{
+    max-width: 500px;
+    font-size: 30px;
+    margin-top: 0;
+    border-top: 3px solid white;
+}
+
+.capa .botao{
+    border: 1px solid white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.capa .botao:hover{
+    background-color: #2196f3;
+    border: 0;
+}
+
+/*---- PROJETO ----*/
+
+.projeto{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+
+    background-color: #f7f7f7;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.video{
+    flex: 50%;
+    padding: 0 0 0 20px;
+}
+   
+   
+
+.video iframe{
+    width: 100%;
+}
+
+.sobre-projeto{
+    flex: 50%;
+    padding: 0px 50px;
+    margin-bottom: 40px;
+}
+
+.sobre-projeto h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.sobre-projeto p{
+    text-align: justify;
+    font-size: 13.8px;
+}
+
+/*----SELEÇÃO----*/
+
+
+.t-selecao{
+    text-align: center;
+}
+
+.selecao{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 20px 0;
+    flex-wrap: wrap;
+}
+
+.card2{
+    text-align: center;
+    font-family: arial;
+    box-shadow: 0 7px 4px #777;
+    flex: 25%;
+    padding: 0 30px 0 30px;
+}
+
+.fonte{
+    color: grey;
+    font-size: 18px;
+}
+
+.links{
+    margin-bottom: 10px;
+}
+
+.card2 a{
+    text-decoration: none;
+}
+
+/*----ECOPONTOS----*/
+
+.producao{
+    max-width: 100%;
+    background-color: #f7f7f7;
+    padding: 30px 0 20px 0;
+    margin-top: 30px;
+}
+
+.producao h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producao h2{
+    text-align: center;
+    font-size: 16px;
+}
+
+.container-cards{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+}
+
+.card-ecopontos{
+    max-width: 400px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 2px 7px 8px #777777;
+    margin-left: 30px;
+
+    flex: 30%;
+}
+
+.card-ecopontos img{
+    width: 100%;
+}
+
+/*----SOBRE MIM----*/
+
+.sobre{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 20px 0;
+    background-color: #f7f7f7;
+
+}
+
+.coluna{
+    flex: 50%;
+    padding: 0 40px;
+}
+
+.coluna img{
+    max-width: 100%;
+    width: 50%;
+    margin-left: 130px;
+}
+
+.coluna h1{
+    text-align: center;
+    font-size: 30px;
+}
+   
+.coluna h4{
+    text-align: center;
+}
+
+.coluna p{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/*----RODAPÉ----*/
+
+footer{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 50px 0;
+    background-color: #01acea;
+    color: #ffffff;
+}
+
+.col-ft{
+    margin-left: 30px;
+}
+
+.col-ft p{
+    font-size: 15px;
+}
+
+.coluna p{
+    font-size: 15px;
+}
+
+/*----RESPONSIVIDADE----*/
+
+@media (max-width: 760px){
+
+     /*----HEADER RESPONSIVO----*/
+     .flex-container{
+         flex-direction: column;
+         align-items: center;
+         padding: 0px;
+     } 
+
+     .menu-nav{
+         display: none;
+     }
+
+/**/
+
+     .projeto{
+         flex-direction: column;
+     }
+
+     .video{
+         flex: 1;
+         padding: 20px;
+         width: 100%;
+     }
+
+     .sobre-projeto{
+         padding: 20px;
+     }
+
+ /**/
+
+     .selecao{
+         flex-direction: column;
+     }
+
+ /**/
+
+      .container-cards{
+          flex-direction: column;
+          align-items: center;
+      }
+
+ /**/
+ 
+      .sobre{
+          flex-direction: column;
+      }
+
+/**/
+
+      footer{
+          flex-direction: column;
+}
+    
+      .col-ft h1{
+          text-align: center;
+      }
+
+}
